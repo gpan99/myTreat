@@ -1,0 +1,76 @@
+﻿
+@model RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+@section scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+    <div class="row">
+
+            <form asp-controller="Account" asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
+                <h4>Create a new account.</h4>
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="UserName" class="col-md-2 control-label">Login</label>
+                    <div class="col-md-10">
+                        <input asp-for="UserName" value="" class="form-control" />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Email" value="gpan99@yahoo.com" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Password" value="Jeff!113" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ConfirmPassword" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="ConfirmPassword" value="Jeff!113" class="form-control" />
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Role" class="col-md-2 control-label"></label>
+                    <div class="col-md-5 radio">
+                        <label>
+                            <input asp-for="Role" type="radio" checked="checked" value="Supporter" />
+                            Supporter
+                        </label>
+                    </div>
+                    <div class="col-md-5 radio">
+                        <label>
+                            <input asp-for="Role" type="radio" value="Patient" />
+                            Patient
+                        </label>
+                        <span asp-validation-for="Role" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Technology" class="col-md-2 control-label">Claim</label>
+                    <div class="col-md-10">
+                        <input asp-for="Technology" value="asp.net" class="form-control" />
+                        <span asp-validation-for="Technology" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="submit" class="btn btn-default">Register</button>
+                    </div>
+                </div>
+            </form>
+       </div>
+
+
