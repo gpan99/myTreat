@@ -17557,11 +17557,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DotNetCore\\treat\\DutchTreat\\DutchTreat\\DutchTreat.csproj",
+      "projectUniqueName": "C:\\DotNetCore\\myTreat\\DutchTreat\\DutchTreat.csproj",
       "projectName": "DutchTreat",
-      "projectPath": "C:\\DotNetCore\\treat\\DutchTreat\\DutchTreat\\DutchTreat.csproj",
+      "projectPath": "C:\\DotNetCore\\myTreat\\DutchTreat\\DutchTreat.csproj",
       "packagesPath": "C:\\Users\\gpan9_000\\.nuget\\packages\\",
-      "outputPath": "C:\\DotNetCore\\treat\\DutchTreat\\DutchTreat\\obj\\",
+      "outputPath": "C:\\DotNetCore\\myTreat\\DutchTreat\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
